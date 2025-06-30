@@ -32,7 +32,7 @@ class AppLoader extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             home: Scaffold(
               body: Center(
-                child: Text('Error al iniciar Firebase: ${snapshot.error}'),
+                child: Text('Error al iniciar Firebase.: ${snapshot.error}'),
               ),
             ),
           );
