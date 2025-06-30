@@ -1,9 +1,9 @@
-name: Deploy to Firebase Hosting on Merge to Main
+name: Deploy to Firebase Hosting on Push to Master
 
 on:
   push:
     branches:
-      - main  # Asegúrate que este es tu branch principal
+      - master
 
 jobs:
   build_and_deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.1'  # Usa tu versión actual de Flutter
+          flutter-version: '3.29.3' # Reemplaza por tu versión si es diferente
 
       - name: Install dependencies
         run: flutter pub get
